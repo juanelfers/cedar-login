@@ -1,3 +1,5 @@
-export default function Home() {
-  return null;
+import LoginForm from "./components/LoginForm";
+
+export default function Page() {
+  return <LoginForm />
 }
