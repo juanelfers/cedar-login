@@ -1,3 +1,5 @@
+import SmallWrapper from "../components/SmallWrapper";
+
 export default function Dashboard() {
-  return <div>Welcome to the user management page</div>;
+  return <SmallWrapper>Welcome to the user management page</SmallWrapper>;
 }
