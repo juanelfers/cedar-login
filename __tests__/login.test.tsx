@@ -1,7 +1,7 @@
-import { vi, expect, test, beforeAll, afterEach } from "vitest";
+import { vi, expect, test, beforeAll } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
-import LoginForm from "../app/pages/LoginForm";
 import mockRouter from "next-router-mock";
+import LoginForm from "../app/pages/LoginForm";
 
 const email = "user1@cedar.com";
 const password = "password123";
@@ -59,7 +59,7 @@ test("Invalid login - Wrong password", async () => {
     "Password is incorrect"
   );
 
-  // Expect email error to be there and no path change
+  // Expect password error to be there and no path change
   expect(emailErrorMessage).toBeFalsy();
   expect(passwordErrorMessage).toBeTruthy();
   expect(mockRouter).toMatchObject({
