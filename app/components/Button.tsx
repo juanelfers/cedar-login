@@ -1,8 +1,15 @@
 interface ButtonProps {
   onClick: () => void;
-  children: JSX.Element[] | JSX.Element | string;
+  children: React.ReactNode;
 }
 
 export default function Input({ onClick, children }: ButtonProps): JSX.Element {
-  return <button onClick={onClick}>{children}</button>;
+  return (
+    <button
+      onClick={onClick}
+      className="block w-full p-3 border-0 rounded-lg bg-light-blue text-sky-50 font-bold tracking-wide"
+    >
+      {children}
+    </button>
+  );
 }

@@ -10,11 +10,12 @@ export default function Input({
   onChange,
 }: InputProps): JSX.Element {
   return (
-    <label>
+    <label className="block text-grayish-blue text-sm tracking-wide">
       {label}
       <input
         value={value}
         onChange={({ target: { value } }) => onChange(value)}
+        className="block w-full p-3 mt-2 border border-grayish-blue rounded-lg"
       />
     </label>
   );
