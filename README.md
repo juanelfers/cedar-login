@@ -4,10 +4,10 @@ Welcome to Cedar Login! This is a simple login application built with Next.js.
 
 ### Ready to use
 
-You don't really need to run the application locally! It's already uploaded so you can check it out. 
+You don't need to run the application locally! It's already uploaded so you can check it out. 
 Visit it a https://cedar-login.vercel.app/
 
-Or you can follow this instructions to test it in your invoronment:
+Or you can follow this instructions to test it in your environment:
 
 ## Getting Started
 
